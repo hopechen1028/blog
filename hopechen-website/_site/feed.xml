@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hope Chen</title>
+    <description>Hi there, I&#39;m Hope working as an UI/UX designer @ Wiredcraft. This is my personal window to the world where you can find more about me.
+</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 17 Aug 2016 20:13:00 +0800</pubDate>
+    <lastBuildDate>Wed, 17 Aug 2016 20:13:00 +0800</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+  </channel>
+</rss>
