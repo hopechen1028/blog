@@ -4,6 +4,7 @@ email: hi@hopechen.me
 description: > # this means to ignore newlines until "baseurl:"
   Hi there, I'm Hope working as an UI/UX designer @ Wiredcraft. This is my personal window to the world where you can find more about me.
 baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://hopechen.me"
 twitter_username: hopechen
 github_username:  hopechen1028
 
