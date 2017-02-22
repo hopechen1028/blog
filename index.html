@@ -4,8 +4,99 @@
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <style>
+    body {
+      font-family: gotham;
+    }
+    .tricker {
+      height: 50px;
+      overflow: hidden;
+      margin: 100px auto 20px;
+    }
+    .tricker h2 {
+      color: #333;
+      margin: 0;
+      height: 50px;
+      line-height: 50px;
+      font-size: 40px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: margin-top .3s ease;
+    }
+    .subline {
+      width: 100px;
+      height: 2px;
+      margin: 10px auto;
+      background-color: #181818;
+    }
+    p {
+      text-align: center;
+      line-height: 26px;
+      color: #676665;
+      font-size: 18px;
+      font-weight: 300;
+      font-family: lato;
+    }
+
+    .piggy {
+            width: 88px;
+            height: 62px;
+            margin: 0 auto;
+            background: url('http://flyingant.oss-cn-hangzhou.aliyuncs.com/b47b1b88-4fbe-471d-9c53-a9bd76dea3c3/piggy-chew.png') 100% 0 no-repeat;
+            animation: -webkit-animation:anim-look-reverse 2s steps(47);animation:anim-look-reverse 2s steps(47) infinite}
+        }
+        @-webkit-keyframes anim-look-reverse{
+            from{background-position:-4136px 0}
+            to{background-position:0 0}
+        }
+        @keyframes anim-look-reverse{
+            from{background-position:-4136px 0}
+            to{background-position:0 0}
+        }
+
+    </style>
 </head>
 <body>
-<div>Hi, there</div>
+  <div class="tricker">
+    <h2>Hey, there</h2>
+    <h2>I am Hope Chen.</h2>
+    <h2>Welcome</h2>
+  </div>
+  <div class="subline"></div>
+  <p>Now I work as UI/UX designer at <a href="http://wiredcraft.com"> Wiredcraft</a>.
+    <br>This is my window to the world where
+  you can find more about me <a href="https://hopechen.strikingly.com">here</a>.
+   <br> Hope you like it.</p>
+
+   <div class="piggy">
+
+</div>
+
+
+   <script>
+   (function($) {
+      var duration = 1800;  // change this to change rotation time in milliseconds
+      var current = 1;
+      var tricker = $(".tricker");
+      var height = tricker.height();
+      var number = tricker.children().length;
+      var first = tricker.children().first();
+
+      setInterval(function() {
+        var interv = current * -1 * height;
+        first.css("margin-top", interv + "px");
+        if (current == number) {
+          first.css("margin-top", "0px");
+          current = 1;
+        } else {
+          current++;
+        }
+      }, duration);
+    })(jQuery);
+</script>
 </body>
 </html>
