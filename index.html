@@ -42,21 +42,34 @@
       font-family: lato;
     }
 
-    .piggy {
-            width: 88px;
-            height: 62px;
-            margin: 0 auto;
-            background: url('http://flyingant.oss-cn-hangzhou.aliyuncs.com/b47b1b88-4fbe-471d-9c53-a9bd76dea3c3/piggy-chew.png') 100% 0 no-repeat;
-            animation: -webkit-animation:anim-look-reverse 2s steps(47);animation:anim-look-reverse 2s steps(47) infinite}
-        }
-        @-webkit-keyframes anim-look-reverse{
-            from{background-position:-4136px 0}
-            to{background-position:0 0}
-        }
-        @keyframes anim-look-reverse{
-            from{background-position:-4136px 0}
-            to{background-position:0 0}
-        }
+     .piggy {
+    width: 88px;
+    height: 62px;
+    margin: -10px auto;
+    }
+
+    .piggy-walk {
+    background: url('http://zoo.flyingant.me/images/piggy-walk.png') 100% 0 no-repeat;
+    animation:anim 1s steps(23) infinite,movelr 120s linear reverse infinite;
+    -webkit-animation:anim 1s steps(23) infinite,movelr 120s linear reverse infinite;
+    transform: scale(0.6);
+    }
+    @-webkit-keyframes movelr{
+    from{left:-2%}
+    to{left:101%}
+    }
+    @keyframes movelr{
+    from{left:-2%}
+    to{left:101%}
+    }
+    @-webkit-keyframes anim{
+    from{background-position:0 0}
+    to{background-position:100% 0}
+    }
+    @keyframes anim{
+    from{background-position:0 0}
+    to{background-position:100% 0}
+    }
 
     </style>
 </head>
@@ -72,7 +85,7 @@
   you can find more about me <a href="https://hopechen.strikingly.com">here</a>.
    <br> Hope you like it.</p>
 
-   <div class="piggy">
+   <div class="piggy piggy-walk">
 
 </div>
 
